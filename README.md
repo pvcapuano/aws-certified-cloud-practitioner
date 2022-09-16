@@ -547,18 +547,6 @@ O [API Gateway](https://aws.amazon.com/pt/api-gateway) é um serviço gerenciado
 publiquem, mantenham, monitorem e protejam APIs em qualquer escala com facilidade. APIs agem como a “porta de entrada”
 para aplicativos acessarem dados, lógica de negócios ou funcionalidade de seus serviços de back-end.
 
-<div id="support"></div>
-
-<!--
-## Suporte
-
-Os [planos](https://aws.amazon.com/pt/premiumsupport/plans) de suporte da AWS estão divididos em 04 categorias:
-
-- Basic (está incluído para todos os clientes da AWS).
-- [Developer](https://aws.amazon.com/pt/premiumsupport/plans/developers).
-- [Business](https://aws.amazon.com/pt/premiumsupport/plans/business).
-- [Enterprise](https://aws.amazon.com/pt/premiumsupport/plans/enterprise).
-
 <div id="links"></div>
 
 ## Materiais de apoio
@@ -567,17 +555,11 @@ Os [planos](https://aws.amazon.com/pt/premiumsupport/plans) de suporte da AWS es
 
 - [AWS Certified Cloud Practitioner (CLF-C01)](https://d1.awsstatic.com/pt_BR/training-and-certification/docs-cloud-practitioner/AWS-Certified-Cloud-Practitioner_Exam-Guide.pdf)
 
-### Artigos
+### Documentos importantes para a prova
 
-- [Glossário da AWS](https://docs.aws.amazon.com/pt_br/general/latest/gr/glos-chap.html)
 - [Whitepaper da AWS](https://d1.awsstatic.com/whitepapers/pt_BR/aws-overview.pdf)
+- [AWS Well-Architected Framework](https://docs.aws.amazon.com/pt_br/wellarchitected/latest/framework/wellarchitected-framework.pdf)
 
-### Cursos
+### Curso
 
 - [AWS Cloud Practitioner Essentials](https://explore.skillbuilder.aws/learn/course/8287/aws-cloud-practitioner-essentials-portuguese)
-- [AWS Certified Cloud Practitioner - Preparatório AWS CCP](https://www.udemy.com/course/aws-certified-cloud-practitioner-aws-ccp)
-
-### Simulados
-
-- [AWS Certified Cloud Practitioner - Exemplos de Perguntas](https://d1.awsstatic.com/pt_BR/training-and-certification/docs-cloud-practitioner/AWS-Certified-Cloud-Practitioner_Sample-Questions.pdf)
-- [AWS Certified Cloud Practitioner - Simulados em Português](https://www.udemy.com/course/aws-practitioner-em-portugues) -->
