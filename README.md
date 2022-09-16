@@ -155,7 +155,7 @@ de forma consistente suas arquiteturas em relação às melhores práticas e ide
 - Visa a evitar gastos desnecessários. Os principais tópicos incluem compreensão e controle de onde o dinheiro está sendo gasto, seleção do número certo e mais adequado dos tipos de recurso, análise dos gastos ao longo do tempo e escalabilidade para atender às necessidades de negócios sem gastar excessivamente.
 
 - **Principais Serviços da AWS**: Tag Resources, AWS Cost Explorer, Autoscaling
-<!--  
+
 <div id="services"></div>
 
 ### Serviços
@@ -549,6 +549,7 @@ para aplicativos acessarem dados, lógica de negócios ou funcionalidade de seus
 
 <div id="support"></div>
 
+<!--
 ## Suporte
 
 Os [planos](https://aws.amazon.com/pt/premiumsupport/plans) de suporte da AWS estão divididos em 04 categorias:
