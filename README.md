@@ -1,37 +1,36 @@
 # AWS Certified Cloud Practitioner
 
-* [Overview](#overview)
-* [Roadmap](#roadmap)
-    - [Computação em nuvem](#cloud_computing)
-    - [Infraestrutura global](#infrastructure)
-    - [Acesso](#access)
-    - [Arquitetura](#well_architected_framework)
-    - [Serviços](#services)
-        - [Armazenamento](#storage)
-        - [Banco de dados](#database)
-        - [Computação](#computing)
-        - [Data lakes e análises](#analytics)
-        - [Gerenciamento e governança](#governance)
-        - [Gerenciamento financeiro na nuvem](#financial_management)
-        - [Integração de aplicativos](#application)
-        - [Segurança, identidade e conformidade](#security)
-        - [Redes e entrega de conteúdo](#network)
-    - [Suporte](#support)
-* [Materiais de apoio](#links)
+- [Visão geral](#overview)
+- [Roadmap](#roadmap)
+  - [Computação em nuvem](#cloud_computing)
+  - [Tipos de Cloud Computing](#cloud_types)
+  - [Infraestrutura global](#infrastructure)
+  - [Acesso](#access)
+  - [Arquitetura](#well_architected_framework)
+  - [Serviços](#services)
+    - [Armazenamento](#storage)
+    - [Banco de dados](#database)
+    - [Computação](#computing)
+    - [Data lakes e análises](#analytics)
+    - [Gerenciamento e governança](#governance)
+    - [Gerenciamento financeiro na nuvem](#financial_management)
+    - [Integração de aplicativos](#application)
+    - [Segurança, identidade e conformidade](#security)
+    - [Redes e entrega de conteúdo](#network)
+  - [Suporte](#support)
+- [Materiais de apoio](#links)
 
-<div id="overview"></div> 
+<div id="overview"></div>
 
-## Overview
+## Visão geral
 
-Este repositório é um compilado de informações do conteúdo estudado em cursos, artigos, simulados e outros, que me
-ajudaram na preparação para a certificação
-[AWS Certified Cloud Practitioner](https://aws.amazon.com/pt/certification/certified-cloud-practitioner).
+Criei esse repositório para organizar o material para a prova de certificação [AWS Certified Cloud Practitioner](https://aws.amazon.com/pt/certification/certified-cloud-practitioner).
 
-<div id="roadmap"></div> 
+<div id="roadmap"></div>
 
 ## Roadmap
 
-<div id="cloud_computing"></div> 
+<div id="cloud_computing"></div>
 
 ### Computação em nuvem
 
@@ -41,30 +40,60 @@ consumo (pay as you go).
 
 **Vantagens**
 
-- **Mudança na modalidade gastos**: muda da modalidade de despesas de
+- **Mudança na modalidade gastos**: Muda da modalidade de despesas de
   capital, [CAPEx](https://pt.wikipedia.org/wiki/CAPEX), para modelo de despesa variável,
   [OPEx](https://pt.wikipedia.org/wiki/OPEX).
 
+- **Economia de escala**: Você não precisa comprar servidores, storages, geradores de energia, construir prédios, manutenção predial, segurança, entre outros. Quanto mais esse volume cresce, mas sua empresa se beneficia seja em disponibilidade, performance ou preço.
 
-- **Economia de escala**: com a computação em nuvem, você pode chegar a um custo variável menor do que seria possível
-  por conta própria. Como o uso de centenas de milhares de clientes é agregado na nuvem, os fornecedores como a AWS
-  podem ter maiores economias em escala, o que se converte em um menor preço pago conforme o uso.
-
-
-- **Capacidade**: você cresce ou diminui a capacidade necessária para atender suas demandas, pagando apenas o que
+- **Capacidade**: Você cresce ou diminui a capacidade necessária para atender suas demandas, pagando apenas o que
   consumir.
 
+- **Agilidade e velocidade**: Recursos estão disponíveis imediatamente.
 
-- **Agilidade e velocidade**: recursos estão disponíveis imediatamente.
+- **Economia**: Você deixa de gastar dinheiro para comprar e manter data centers.
 
-
-- **Economia**: você deixa de gastar dinheiro para comprar e manter data centers.
-
-
-- **Global em poucos minutos**: permite que você tenha recursos disponíveis globalmente em poucos minutos com baixa
+- **Global em poucos minutos**: Permite que você tenha recursos disponíveis globalmente em poucos minutos com baixa
   latência e custo, melhorando a experiência do cliente
 
-<div id="infrastructure"></div> 
+<div id="cloud_types"></div>
+
+### Tipos de Cloud Computing
+
+A Amazon AWS possui os 3 tipos em seus mais variados produtos, serviços e funcionalidades:
+
+**IaaS**: Infrastructure As a Service (Infraestrutura como Serviço)
+
+- O contratante gerencia os servidores, sejam físicos ou virtuais.
+- O contratante gerencia os sistemas operacionais e softwares adicionais.
+- O datacenter não tem responsabilidade sobre o que você faz com os recursos (servidores).
+- Empresas em geral compram serviços de hospedagem.
+
+**PaaS**: Platform As a Service (Plataforma como Serviço)
+
+- O Datacenter é responsável pelos recursos físicos ou virtuais, sistemas operacionais, softwares, alguns itens de segurança.
+- O contratante é responsável pela aplicação.
+- Aqui por exemplo, se você quiser colocar um website no ar, a empresa te provê todo o ambiente, bastando você fazer o upload da sua aplicação e configurá-la.
+
+**SaaS**: Software As a Service (Software como Serviço)
+
+- Nesse modelo você praticamente usa o serviço e não tem que se preocupar com nada. Um bom exemplo disso é serviço de email como Gmail, Udemy, Office 365, entre outros.
+
+Tipos de instalação do Cloud Computing:
+
+**Public Cloud**
+
+- Amazon Web Services, Microsoft Azure, Google Cloud Platform
+
+**Hybrid Cloud**
+
+- Combinação entre Publica e Privada
+
+**Private Cloud**
+
+- Normalmente é uma instalação física em um Datacenter onde você faz todo o gerenciamento, usando diversas tecnologias, entre elas VMWare e OpenStack
+
+<div id="infrastructure"></div>
 
 ### Infraestrutura global
 
@@ -73,19 +102,17 @@ oferece mais de 200 serviços completos de datacenters em todo o mundo.
 
 - **Regiões (Regions)**: são as localidades físicas onde a AWS está disponível ao redor do mundo.
 
-
 - **Zonas de disponibilidades (Availability Zone - AZ)**: é a quantidade de datacenter que a AWS tem em cada uma das
   regiões para prover serviços e produtos. No mínimo são duas zonas de disponibilidade por região, a fim de proporcionar
   alta disponibilidade, tolerância a falhas e escalabilidade.
-
 
 - **Pontos de presença (Edge locations)**: uma edge location é basicamente um pequeno servidor de cache. Eles estão
   localizados na maioria das principais cidades do mundo e são usados especificamente pelo CloudFront (CDN) para
   distribuir conteúdo ao usuário final e reduzir a latência do acesso.
 
-<div id="access"></div> 
+<div id="access"></div>
 
-### Acesso
+<!--  ### Acesso
 
 - **Management Console**: interface gráfica com suporte para a maioria dos serviços da AWS. Pode ser usada via navegador
   ou aplicativo.
@@ -97,7 +124,7 @@ oferece mais de 200 serviços completos de datacenters em todo o mundo.
 - **Software Development Kit - SDK**: suporta diversas linguagens de programação e permite a incorporação de serviços
   AWS em aplicações.
 
-<div id="well_architected_framework"></div> 
+<div id="well_architected_framework"></div>
 
 ### Arquitetura
 
@@ -123,11 +150,11 @@ de forma consistente suas arquiteturas em relação às melhores práticas e ide
 
 - **Otimização de custos**: se concentra em evitar custos desnecessários.
 
-<div id="services"></div> 
+<div id="services"></div>
 
 ### Serviços
 
-<div id="storage"></div> 
+<div id="storage"></div>
 
 ### Armazenamento
 
@@ -361,7 +388,7 @@ O Trusted Advisor avalia seus recursos em relação a cinco pilares:
 Algumas verificações são gratuitas e estão inclusas em sua conta da AWS e outras estão disponíveis dependendo do nível
 do seu plano de suporte.
 
-<div id="financial_management"></div> 
+<div id="financial_management"></div>
 
 ## Gerenciamento financeiro na nuvem
 
@@ -473,7 +500,7 @@ visibilidade e remediação.
 O [Macie](https://aws.amazon.com/pt/macie) é um serviço de segurança e privacidade de dados totalmente gerenciado que
 usa machine learning e correspondência de padrões para descobrir e proteger seus dados confidenciais na AWS.
 
-<div id="network"></div> 
+<div id="network"></div>
 
 ### Redes e entrega de conteúdo
 
@@ -514,7 +541,7 @@ O [API Gateway](https://aws.amazon.com/pt/api-gateway) é um serviço gerenciado
 publiquem, mantenham, monitorem e protejam APIs em qualquer escala com facilidade. APIs agem como a “porta de entrada”
 para aplicativos acessarem dados, lógica de negócios ou funcionalidade de seus serviços de back-end.
 
-<div id="support"></div> 
+<div id="support"></div>
 
 ## Suporte
 
@@ -525,7 +552,7 @@ Os [planos](https://aws.amazon.com/pt/premiumsupport/plans) de suporte da AWS es
 - [Business](https://aws.amazon.com/pt/premiumsupport/plans/business).
 - [Enterprise](https://aws.amazon.com/pt/premiumsupport/plans/enterprise).
 
-<div id="links"></div> 
+<div id="links"></div>
 
 ## Materiais de apoio
 
@@ -546,4 +573,4 @@ Os [planos](https://aws.amazon.com/pt/premiumsupport/plans) de suporte da AWS es
 ### Simulados
 
 - [AWS Certified Cloud Practitioner - Exemplos de Perguntas](https://d1.awsstatic.com/pt_BR/training-and-certification/docs-cloud-practitioner/AWS-Certified-Cloud-Practitioner_Sample-Questions.pdf)
-- [AWS Certified Cloud Practitioner - Simulados em Português](https://www.udemy.com/course/aws-practitioner-em-portugues)
+- [AWS Certified Cloud Practitioner - Simulados em Português](https://www.udemy.com/course/aws-practitioner-em-portugues) -->
