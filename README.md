@@ -79,19 +79,13 @@ A Amazon AWS possui os 3 tipos em seus mais variados produtos, serviços e funci
 
 - Nesse modelo você praticamente usa o serviço e não tem que se preocupar com nada. Um bom exemplo disso é serviço de email como Gmail, Udemy, Office 365, entre outros.
 
-Tipos de instalação do Cloud Computing:
+### Tipos de instalação do Cloud Computing
 
-**Public Cloud**
+- **Public Cloud**: Amazon Web Services, Microsoft Azure, Google Cloud Platform
 
-- Amazon Web Services, Microsoft Azure, Google Cloud Platform
+- **Hybrid Cloud**: Combinação entre Publica e Privada
 
-**Hybrid Cloud**
-
-- Combinação entre Publica e Privada
-
-**Private Cloud**
-
-- Normalmente é uma instalação física em um Datacenter onde você faz todo o gerenciamento, usando diversas tecnologias, entre elas VMWare e OpenStack
+- **Private Cloud**: Normalmente é uma instalação física em um Datacenter onde você faz todo o gerenciamento, usando diversas tecnologias, entre elas VMWare e OpenStack
 
 <div id="infrastructure"></div>
 
@@ -112,14 +106,12 @@ oferece mais de 200 serviços completos de datacenters em todo o mundo.
 
 <div id="access"></div>
 
-<!--  ### Acesso
+### Acesso
 
 - **Management Console**: interface gráfica com suporte para a maioria dos serviços da AWS. Pode ser usada via navegador
   ou aplicativo.
 
-
 - **Command Line Interface - CLI**: acesso aos serviços via linha de comando.
-
 
 - **Software Development Kit - SDK**: suporta diversas linguagens de programação e permite a incorporação de serviços
   AWS em aplicações.
@@ -128,28 +120,42 @@ oferece mais de 200 serviços completos de datacenters em todo o mundo.
 
 ### Arquitetura
 
-O [Well Architected Framework](https://aws.amazon.com/pt/architecture/well-architected)  ajuda você a entender como
+O [Well Architected Framework](https://aws.amazon.com/pt/architecture/well-architected) ajuda você a entender como
 projetar e operar sistemas confiáveis, seguros, eficientes e econômicos na nuvem AWS. Ele fornece uma maneira de avaliar
 de forma consistente suas arquiteturas em relação às melhores práticas e identificar áreas para melhorias.
 
 **Pilares**
 
-- **Excelência operacional**: se concentra em executar e monitorar sistemas para entregar valor empresarial e melhorar
-  continuamente processos e procedimentos.
+**Operational Excellence (Excelência operacional)**:
 
+- Concentra em executar e monitorar sistemas para entregar valor empresarial e melhorar continuamente processos e procedimentos. Os principais tópicos incluem gerenciamento e automação de alterações, reação a eventos e definição de padrões para gerenciar com êxito as operações diárias.
 
-- **Segurança**: se concentra em proteger informações e sistemas.
+* **Principais Serviços da AWS**: AWS Config, Amazon Cloudwatch, AWS CloudFormation
 
+**Segurança (Security)**:
 
-- **Confiabilidade**: se concentra em garantir que uma carga de trabalho execute sua função pretendida corretamente e de
-  modo consistente quando esperado.
+- Concentra em proteger informações e sistemas. Os principais tópicos incluem confidencialidade e integridade de dados, identificação e gerenciamento de quem pode fazer o quê com o gerenciamento de privilégios, proteção de sistemas e estabelecimento de controles para detectar eventos de segurança.
 
+- **Principais Serviços da AWS**: IAM, Cloudtrail, WAF, KMS
 
-- **Eficiência de performance**: se concentra no uso eficiente de recursos de TI e computação.
+**Reliability (Confiabilidade)**:
 
+- Concentra na capacidade de evitar e se recuperar rapidamente das falhas para atender a demanda comercial e de clientes. Os principais tópicos incluem elementos básicos sobre configuração, requisitos entre projetos, planejamento de recuperação e como lidamos com as mudanças.
 
-- **Otimização de custos**: se concentra em evitar custos desnecessários.
+- **Principais Serviços da AWS**: AWS CloudFormation, Amazon CloudWatch, S3, Glacier
 
+**Performance Efficiency (Eficiência de performance)**:
+
+- Concentra no uso eficiente de recursos de TI e computação. Os principais tópicos incluem seleção dos tipos e dos tamanhos certos dos recursos, tomando como base os requisitos de carga de trabalho, a performance do monitoramento e a tomada de decisões fundamentadas para manter a eficiência à medida que as necessidades comerciais evoluem.
+
+- **Principais Serviços da AWS**: Autoscaling, Elasticcache, CloudWatch, CloudFront
+
+**Cost Optimization (Otimização de custos)**:
+
+- Visa a evitar gastos desnecessários. Os principais tópicos incluem compreensão e controle de onde o dinheiro está sendo gasto, seleção do número certo e mais adequado dos tipos de recurso, análise dos gastos ao longo do tempo e escalabilidade para atender às necessidades de negócios sem gastar excessivamente.
+
+- **Principais Serviços da AWS**: Tag Resources, AWS Cost Explorer, Autoscaling
+<!--  
 <div id="services"></div>
 
 ### Serviços
@@ -277,24 +283,24 @@ redimensionável na nuvem.
 
 **Modalidade de gastos**
 
-|  Modalidade   |    Características                                                                                                                     |
-|     :---      |       :---                                                                                                                             |
-|  `Spot`       |  - Leilão. <br> - O cliente define um preço a pagar pela capacidade ociosa da AWS, se o preço é aceito, a instância é provisionada.    |
-|  `Dedicado`   |  - Servidor dedicado. <br> - Preços por hora. <br> - Descontos de até 70%.                                                             |
-|  `Reservada`  |  - Reserva por 01 ou 03 anos. <br> - Descontos de até 75%. <br> - Pagamento à vista, ou com entrada e o restante pago em mensalidades. |
-|  `On demand`  |  - Sob demanda. <br> - Pay as you go. <br> - Preços por hora.                                                                          |
+| Modalidade  | Características                                                                                                                       |
+| :---------- | :------------------------------------------------------------------------------------------------------------------------------------ |
+| `Spot`      | - Leilão. <br> - O cliente define um preço a pagar pela capacidade ociosa da AWS, se o preço é aceito, a instância é provisionada.    |
+| `Dedicado`  | - Servidor dedicado. <br> - Preços por hora. <br> - Descontos de até 70%.                                                             |
+| `Reservada` | - Reserva por 01 ou 03 anos. <br> - Descontos de até 75%. <br> - Pagamento à vista, ou com entrada e o restante pago em mensalidades. |
+| `On demand` | - Sob demanda. <br> - Pay as you go. <br> - Preços por hora.                                                                          |
 
 **Tipos de instância**
 
 Os tipos de instância EC2 são otimizados para tarefas diferentes.
 
-|  Tipos                            |    Características                                                                                                                                         |
-|     :---                          |       :---                                                                                                                                                 |
-|  `Uso geral`                      |  Fornecem um equilíbrio de recursos de computação, memória e rede.                                                                                         |
-|  `Computação acelerada`           |  Usam aceleradores de hardware, ou coprocessadores, para executar algumas funções de forma mais eficiente do que é possível no software executado em CPUs. |
-|  `Otimizada para memória`        |  São projetadas para fornecer rápida performance para cargas de trabalho que processam grandes conjuntos de dados na memória.                              |
-|  `Otimizada para computação`     |  São ideais para aplicações vinculadas à computação que se beneficiam de processadores de alta performance.                                                |
-|  `Otimizada para armazenamento`  |  São projetadas para cargas de trabalho que exigem alto acesso sequencial de leitura e gravação a grandes conjuntos de dados no armazenamento local.       |
+| Tipos                          | Características                                                                                                                                           |
+| :----------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `Uso geral`                    | Fornecem um equilíbrio de recursos de computação, memória e rede.                                                                                         |
+| `Computação acelerada`         | Usam aceleradores de hardware, ou coprocessadores, para executar algumas funções de forma mais eficiente do que é possível no software executado em CPUs. |
+| `Otimizada para memória`       | São projetadas para fornecer rápida performance para cargas de trabalho que processam grandes conjuntos de dados na memória.                              |
+| `Otimizada para computação`    | São ideais para aplicações vinculadas à computação que se beneficiam de processadores de alta performance.                                                |
+| `Otimizada para armazenamento` | São projetadas para cargas de trabalho que exigem alto acesso sequencial de leitura e gravação a grandes conjuntos de dados no armazenamento local.       |
 
 **Elastic Load Balancing - ELB**
 
