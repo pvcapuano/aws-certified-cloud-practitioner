@@ -17,7 +17,6 @@
     - [Integração de aplicativos](#application)
     - [Segurança, identidade e conformidade](#security)
     - [Redes e entrega de conteúdo](#network)
-  - [Suporte](#support)
 - [Materiais de apoio](#links)
 
 <div id="overview"></div>
