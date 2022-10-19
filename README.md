@@ -557,8 +557,4 @@ para aplicativos acessarem dados, lógica de negócios ou funcionalidade de seus
 ### Documentos importantes para a prova
 
 - [Whitepaper da AWS](https://d1.awsstatic.com/whitepapers/pt_BR/aws-overview.pdf)
-- [AWS Well-Architected Framework](https://docs.aws.amazon.com/pt_br/wellarchitected/latest/framework/wellarchitected-framework.pdf)
-
-### Curso
-
-- [AWS Cloud Practitioner Essentials](https://explore.skillbuilder.aws/learn/course/8287/aws-cloud-practitioner-essentials-portuguese)
+- [AWS Well-Architected Framework](https://docs.aws.amazon.com/pt_br/wellarchitected/latest/framework/wellarchitected-framework.pdf
